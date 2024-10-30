@@ -8,6 +8,18 @@ resultado = listarBancoDados(conn,sql)
 for elemento in resultado:
     print(elemento)
 
+
+conta = int(input('digite a conta')
+agencia = int(input('agencia))
+titular = input('titular')
+saido = float(input('saldo'))
+
+sql = "insert into conta (conta,agencia,titular,saldo) VALUES (%s , %s , %s, %s)"
+dados = (conta, agencia, titular, saldo)
+insertNoBancoDados(conn,sql,dados)
+
+
+
 """
 nome = input('digite o nome do produto ') descricao = input('digite a descricao ') areco = float(input('digite o preco '))
 scl = "INSERT INTO rodutos nome descricao reco VALUES Is Is
