@@ -20,17 +20,6 @@ insertNoBancoDados(conn,sql,dados)
 
 
 
-"""
-nome = input('digite o nome do produto ') descricao = input('digite a descricao ') areco = float(input('digite o preco '))
-scl = "INSERT INTO rodutos nome descricao reco VALUES Is Is
-• 1111 1.01.1" \A I .1. 10 • 1001
-6 (nn,6 d06rriran 1,6n) v
-"""
-
-
-
-
-
 
 '''
 import mysql.connector
