@@ -1,6 +1,6 @@
 from operacoesbd import *
 
-conn = abrirBancoDados("localhost", "root", 1234, "abella")
+conn = abrirBancoDados("localhost", "root", "1234", "abella")
 
 sql = "SELECT * FROM conta"
 resultado = listarBancoDados(conn,sql)
@@ -9,16 +9,17 @@ for elemento in resultado:
     print(elemento)
 
 
-conta = int(input('digite a conta')
-agencia = int(input('agencia))
-titular = input('titular')
-saido = float(input('saldo'))
+conta = int(input('digite a conta: '))
+agencia = int(input('digite a agencia: '))
+titular = input('digite o(a) titular: ')
+saldo = float(input('digite o saldo: '))
 
 sql = "insert into conta (conta,agencia,titular,saldo) VALUES (%s , %s , %s, %s)"
 dados = (conta, agencia, titular, saldo)
 insertNoBancoDados(conn,sql,dados)
 
-
+sql = "SELECT * FROM conta"
+resultado = listarBancoDados(conn,sql)
 
 
 '''
